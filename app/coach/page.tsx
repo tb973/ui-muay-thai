@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { ArrowRight, MessageCircle } from 'lucide-react'
 import { PageHeading } from '@/components/page-heading'
+import { TrainLike } from '@/components/coach/train-like'
 
 export const metadata: Metadata = {
   title: 'Coach | KRU',
@@ -60,6 +61,10 @@ export default function CoachPage() {
             ))}
           </ul>
         </section>
+      </div>
+
+      <div className="pt-6 md:pt-10">
+        <TrainLike />
       </div>
     </div>
   )
