@@ -1,3 +1,4 @@
+import { FightTicker } from '@/components/home/fight-ticker'
 import { Hero } from '@/components/home/hero'
 import { UpNext } from '@/components/home/up-next'
 import { ProgressStats } from '@/components/home/progress-stats'
@@ -8,7 +9,10 @@ import { Eyebrow } from '@/components/page-heading'
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-12 md:gap-16">
-      <Hero />
+      <div className="flex flex-col gap-4 md:gap-6">
+        <FightTicker />
+        <Hero />
+      </div>
 
       <section aria-labelledby="path-title" className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
